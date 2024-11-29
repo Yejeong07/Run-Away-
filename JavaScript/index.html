@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도박 예방 퀴즈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="team-names">
+        <h2>팀 이름 입력</h2>
+        <label for="team1-name">팀 1 이름:</label>
+        <input type="text" id="team1-name">
+        <label for="team2-name">팀 2 이름:</label>
+        <input type="text" id="team2-name">
+        <label for="team3-name">팀 3 이름:</label>
+        <input type="text" id="team3-name">
+        <label for="team4-name">팀 4 이름:</label>
+        <input type="text" id="team4-name">
+        <button id="start-quiz">퀴즈 시작</button>
+    </div>
+
+    <div id="quiz-container" style="display:none;">
+        <h2 id="question"></h2>
+        <div class="option" onclick="checkAnswer(0)" id="option1"></div>
+        <div class="option" onclick="checkAnswer(1)" id="option2"></div>
+        <div class="option" onclick="checkAnswer(2)" id="option3"></div>
+        <div class="option" onclick="checkAnswer(3)" id="option4"></div>
+    </div>
+    
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
